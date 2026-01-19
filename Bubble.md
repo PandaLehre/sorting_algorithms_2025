@@ -1,4 +1,4 @@
-Funktionsweise:
+
 Bubblesort Funktionsweise: 
 
     Einfacher Sortieralgorithmus 
@@ -11,14 +11,14 @@ https://www.youtube.com/watch?v=Iv3vgjM8Pv4
 
 
 Pseudocode:
-    bubbleSort(Array A)
-  for (n = A.size; n > 1; n = n - 1) {          // äußere Schleife
-    for (i = 0; i < n - 1; i = i + 1) {         // innere Schleife
-      if (A[i] > A[i + 1]) {
-        A.swap(i, i + 1)
-      }
-    } 
-  }
+      bubbleSort(Array A)
+    for (n = A.size; n > 1; n = n - 1) {          // äußere Schleife
+      for (i = 0; i < n - 1; i = i + 1) {         // innere Schleife
+        if (A[i] > A[i + 1]) {
+          A.swap(i, i + 1)
+        }
+      } 
+    }
 
 Zeitliche/Speicher Komplexität:
     Laufzeit: O(n²)
