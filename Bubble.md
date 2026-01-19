@@ -1,16 +1,22 @@
 
 Bubblesort Funktionsweise: 
 
-    Einfacher Sortieralgorithmus 
-    Sortiert eine Liste durch Vergleich benachbarter Elemente 
-    Zwei Elemente werden vertauscht, wenn das Vordere größer als das Hintere ist
-    Größtes Element „wandert“ pro Durchlauf ans Ende der Liste 
-    Mehrere Durchläufe nötig, bis die Liste vollständig sortiert ist 
+Einfacher Sortieralgorithmus 
+
+Sortiert eine Liste durch Vergleich benachbarter Elemente 
+
+Zwei Elemente werden vertauscht, wenn das Vordere größer als das Hintere ist
+
+Größtes Element „wandert“ pro Durchlauf ans Ende der Liste 
+
+Mehrere Durchläufe nötig, bis die Liste vollständig sortiert ist 
  
 https://www.youtube.com/watch?v=Iv3vgjM8Pv4
 
 
+
 Pseudocode:
+
       bubbleSort(Array A)
     for (n = A.size; n > 1; n = n - 1)      // äußere Schleife
      {                                            
@@ -24,21 +30,35 @@ Pseudocode:
     }
 
 Zeitliche/Speicher Komplexität:
+
     Laufzeit: O(n²)
 
-    Platzkomplexität: O(1)                      // wird kein extra Speicher benötigt
+    Platzkomplexität: O(1)               --> wird kein extra Speicher benötigt
 
 Vor und Nachteile:
+
 Vor: 
+
     Sehr einfache Implementation
+ 
     Kein Zusatsspeicher benötigt
-    Bei schon sortierten Listen nahezu keine Laufzeit O(n)
+   
+    Bei schon sortierten Listen nahezu keine 
+   
+    Laufzeit O(n)
+
+  
 Nachteile:
+    
     Sehr langsam bei großen Datenmengen
+    
     Viel Schreib und Tauschvorgänge
+   
     Ineffizienter als moderne Methoden
 
+
 Typische Anwendungsfälle: 
+
     Visiualisierung: Die "Aufblasen Mechanik"
     Verständnis von Algorithmen
 
