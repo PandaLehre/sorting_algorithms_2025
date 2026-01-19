@@ -7,7 +7,7 @@ Bubblesort Funktionsweise:
     Größtes Element „wandert“ pro Durchlauf ans Ende der Liste 
     Mehrere Durchläufe nötig, bis die Liste vollständig sortiert ist 
  
-    https://www.youtube.com/watch?v=Iv3vgjM8Pv4
+https://www.youtube.com/watch?v=Iv3vgjM8Pv4
 
 
 Pseudocode:
