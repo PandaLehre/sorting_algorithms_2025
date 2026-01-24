@@ -38,14 +38,14 @@ funktion Mergesort(A)
 
 ## Zeitkomplexität
 
-Worst case:     O(n log n) 	
-Average case:   O(n log n) 	
-Best case:      O(n log n) 	
+- Worst case:     O(n log n) 	
+- Average case:   O(n log n) 	
+- Best case:      O(n log n) 	
 
 ## Speicherkomplexität
 
-O(n)
-Stabil 
+- O(n)
+- Stabil 
 
 ## Vorteile
 
@@ -66,6 +66,6 @@ Stabil
 
 ## Quellen 
 
-https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/mergesort/
-https://algorithmen-lernen.de/mergesort/
-https://msgprogramator.sk/de/merge-sort/
+- https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/mergesort/
+- https://algorithmen-lernen.de/mergesort/
+- https://msgprogramator.sk/de/merge-sort/
