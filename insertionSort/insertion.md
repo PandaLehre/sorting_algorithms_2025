@@ -8,10 +8,14 @@
 
 - Anwendung bei kleinen Datenmengen
 - Zeitkomplexität: $O(n^2)$
-- Vorteile:
+- Speicherkomplexität: $O(1)$ kein weiterer Speicher benötigt -> In-place
+- Stabil
+  
+## Vorteile:
     - simpel und leicht zur implementieren
     - effizient für kleine und fast sortierte Listen
-- Nachteile:
+
+## Nachteile:
     - ineffizient bei großen Listen
     - hohe Zeitkomplexität
 
@@ -24,6 +28,10 @@
 
 ## Bild zur Darstellung
 ![Insertion-Sort](img/insertion_sort_1.png)
+
+## Unterschied zu Gnome Sort
+  Todo
+
 
 ## Quellen
 
