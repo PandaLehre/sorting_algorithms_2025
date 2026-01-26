@@ -4,27 +4,31 @@
 
 #include "sort1_bogo.h"
 
-void print_array(const int *a, size_t n) {
-    for (size_t i = 0; i < n; i++) {
-        printf("%d ", a[i]);
-    }
-    printf("\n");
-}
+const MAX_LINES = 10;
+const MAX_LINE_LEN = 256;
 
 int main(){
+    //Sets Seed for randomizer based on current Time
     srand(time(NULL));
 
-    int myNumbers[] = {5, 3, 2, 7};
-    size_t n = sizeof(myNumbers) / sizeof(myNumbers[0]);
+    //Reads File and gives char array back
+    FILE *file = fopen("tests/small_input.txt", "r");
+    if (file == NULL) {
+        printf("Datei konnte nicht geoeffnet werden.\n");
+        return 1;
+    }
+    char linesOutput[MAX_LINES][MAX_LINE_LEN];
+    size_t lineCount = 0;
 
-    printf("TEST 1: Bereits sortiert\n");
-    print_array(myNumbers, n);
+    while (lineCount < MAX_LINES && fgets(linesOutput[lineCount], MAX_LINE_LEN, file)) {
+        lineCount++;
+    }
+    fclose(file);
 
-    bogosort(myNumbers, n);
-
-    printf("Ergebnis:\n");
-    print_array(myNumbers, n);
-    printf("\n");
+    //Test Output
+    for (size_t i = 0; i < lineCount; i++) {
+        printf("Zeile %zu: %s", i, linesOutput[i]);
+    }
 
     return 0;
 }
