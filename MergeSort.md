@@ -64,8 +64,29 @@ funktion Mergesort(A)
 - bei verketteten Listen
 - wenn auf einem externen Speicher sortiert werden soll
 
+## Unterschied Quicksort und Mergesort
+
+| Grundlage für den Vergleich | Quick Sort | Merge Sort |
+|----------------------------|-------------------------------|--------------------------------------|
+| Partition von Elementen im Array | Die Aufteilung erfolgt in einem beliebigen Verhältnis, nicht zwingend in zwei Hälften | Das Array wird immer in zwei Hälften (n/2) geteilt |
+| Komplexester Fall | `O(n²)` | `O(n log n)` |
+| Funktioniert gut auf | Kleineren Arrays | Arrays jeder Größe |
+| Geschwindigkeit der Ausführung | Sehr schnell für kleine Datensätze | Konstante Geschwindigkeit unabhängig von der Größe |
+| Zusätzlicher Speicherplatzbedarf | Weniger (In-Place) | Mehr (nicht In-Place) |
+| Effizienz | Ineffizient für große Arrays | Effizienter |
+| Sortiermethode | Intern | Extern |
+| Stabilität | Nicht stabil | Stabil |
+| Bevorzugt für | Arrays | Verkettete Listen |
+| Ort der Referenz | Gut | Schlecht |
+| Große Arbeit | Partitionieren des Arrays in Sub-Arrays vor rekursivem Sortieren | Zusammenführen der rekursiv sortierten Teil-Arrays |
+| Teilung des Arrays | Kann unausgeglichen sein (abhängig vom Pivot) | Immer ausgeglichen (Teilung in der Mitte) |
+| Methode | In-Place-Sortiermethode | Keine In-Place-Sortiermethode |
+| Speicherbedarf | Kein zusätzlicher Speicher notwendig | Temporäres Array in Größe der Eingabe erforderlich |
+
+
 ## Quellen 
 
 - https://www.studysmarter.de/schule/informatik/algorithmen-und-datenstrukturen/mergesort/
 - https://algorithmen-lernen.de/mergesort/
 - https://msgprogramator.sk/de/merge-sort/
+- https://www.geeksforgeeks.org/dsa/quick-sort-vs-merge-sort/
