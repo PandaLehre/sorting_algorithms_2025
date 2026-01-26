@@ -62,7 +62,7 @@ int main(){
 
     //Test Output
     for (size_t i = 0; i < numLines; i++) {
-        printf("Zeile %zu: ", i + 1);
+        printf("Zeile %lld: ", i + 1);
         for (size_t j = 0; j < valuesPerLine[i]; j++) {
             printf("%d ", numbersPerLine[i][j]);
         }
