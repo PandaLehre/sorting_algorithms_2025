@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/moik/OneDrive - GFT Technologies SE/Documents/DHBW/1_Studienjahr/T4INF1004_Programmieren/Projekt/sorting_algorithms_2025",
+      "program": "c:/Users/moik/OneDrive - GFT Technologies SE/Documents/DHBW/1_Studienjahr/T4INF1004_Programmieren/Projekt/sorting_algorithms_2025/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
