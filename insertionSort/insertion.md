@@ -7,17 +7,21 @@
 ## Beschreibung
 
 - Anwendung bei kleinen Datenmengen
-- Zeitkomplexität: $O(n^2)$
 - Speicherkomplexität: $O(1)$ kein weiterer Speicher benötigt -> In-place
 - Stabil
+
+## Zeitkomplexität
+- Best Case: $O(n)$
+- Average Case:  $O(n^2)$
+- Worst Case:  $O(n^2)$
   
 ## Vorteile:
-    - simpel und leicht zur implementieren
-    - effizient für kleine und fast sortierte Listen
+ - simpel und leicht zur implementieren  
+ - effizient für kleine und fast sortierte Listen
 
 ## Nachteile:
-    - ineffizient bei großen Listen
-    - hohe Zeitkomplexität
+ - ineffizient bei großen Listen
+ - hohe Zeitkomplexität
 
 ## Pseudocode
 
@@ -26,11 +30,29 @@
 3. Schau dir das erste Element der nicht sortierten Liste an (drittes Element), vergleiche es mit der sortierten Liste und setze es an die richtige Position.
 4. Wiederhole 3. bis das Array sortiert ist.
 
+```text
+Insertionsort (Liste l)
+  for a in 0 -> l.length – 2
+  do
+      b = a + 1
+      tmp = l[b]
+      while b > 0 AND tmp < l[b-1] do
+          l[b] = l[b-1]
+          b – –
+      l[b] = tmp
+```
+
 ## Bild zur Darstellung
 ![Insertion-Sort](img/insertion_sort_1.png)
 
 ## Unterschied zu Gnome Sort
-  Todo
+
+| Gnome | Insertion |
+|---------|------------|
+|tauscht Nachbarn | verschiebt in sortierten Teil|
+|weiß nicht wo er weitermachen soll | merkt sich Index des ersten unsortieren Elements|
+
+
 
 
 ## Quellen
