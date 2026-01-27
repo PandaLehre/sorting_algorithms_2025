@@ -19,24 +19,58 @@ int main(){
         
         size_t countElementsSwitched = 0;
         size_t countsArrayChecked = 0;
-        
-        printf(
-            "Gebe die entsprechende Zahl fuer die Test Datei an: \n"
-            "1. floatTest.txt\n"
-            "2. intTest.txt\n"
-        );
-        scanf("%d", &chosenTestCase);
 
+
+        printf(
+            "Gebe die entsprechende Zahl fuer eine bestimme Test Datei ein:\n"
+            " 1. all_equal.txt\n"
+            " 2. duplicates_heavy.txt\n"
+            " 3. float_random.txt\n"
+            " 4. float_reverse.txt\n"
+            " 5. float_sorted.txt\n"
+            " 6. large_random_20.txt\n"
+            " 7. large_random_100.txt\n"
+            " 8. large_random_1000.txt\n"
+            " 9. large_sorted_100.txt\n"
+            "10. medium_random_2.txt\n"
+            "11. medium_random.txt\n"
+            "12. medium_reverse.txt\n"
+            "13. medium_sorted.txt\n"
+            "14. single_element.txt\n"
+            "15. small_duplicates.txt\n"
+            "16. small_random.txt\n"
+            "17. small_reverse.txt\n"
+            "18. small_sorted.txt\n"
+            "19. two_elements.txt\n"
+            "> "
+        );
+        
+        scanf("%d", &chosenTestCase);
         switch (chosenTestCase)
         {
-        case 1:
-            fileName = "../tests/floatTest.txt";
-            break;
-        case 2:
-            fileName = "../tests/intTest.txt";
-            break;
-        default:
-            break;
+            case 1: fileName = "../tests/all_equal.txt"; break;
+            case 2: fileName = "../tests/duplicates_heavy.txt"; break;
+            case 3: fileName = "../tests/float_random.txt"; break;
+            case 4: fileName = "../tests/float_reverse.txt"; break;
+            case 5: fileName = "../tests/float_sorted.txt"; break;
+            case 6: fileName = "../tests/large_random_20.txt"; break;
+            case 7: fileName = "../tests/large_random_100.txt"; break;
+            case 8: fileName = "../tests/large_random_1000.txt"; break;
+            case 9: fileName = "../tests/large_sorted_100.txt"; break;
+            case 10: fileName = "../tests/medium_random_2.txt"; break;
+            case 11: fileName = "../tests/medium_random.txt"; break;
+            case 12: fileName = "../tests/medium_reverse.txt"; break;
+            case 13: fileName = "../tests/medium_sorted.txt"; break;
+            case 14: fileName = "../tests/single_element.txt"; break;
+            case 15: fileName = "../tests/small_duplicates.txt"; break;
+            case 16: fileName = "../tests/small_random.txt"; break;
+            case 17: fileName = "../tests/small_reverse.txt"; break;
+            case 18: fileName = "../tests/small_sorted.txt"; break;
+            case 19: fileName = "../tests/two_elements.txt"; break;
+
+            default:
+            printf("Ungueltige Auswahl.\n");
+            continue;
         }
 
         unsortedArray = textToFloatArray(fileName, &numbersOfElements);
