@@ -1,5 +1,5 @@
-#ifndef ARRAY_CONVERTER.h
-#define ARRAY_CONVERTER.h
+#ifndef ARRAY_CONVERTER_h
+#define ARRAY_CONVERTER_h
 
 #include <stdlib.h>
 

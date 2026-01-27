@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/A200479676/0/vc/dev/sorting_algorithms_2025",
-      "program": "c:/Users/A200479676/0/vc/dev/sorting_algorithms_2025/build/Debug/outDebug",
+      "cwd": "c:/Users/A200479676/0/vc/dev/sorting_algorithms_2025/BogoSort",
+      "program": "c:/Users/A200479676/0/vc/dev/sorting_algorithms_2025/BogoSort/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "array_converter.h"
+
 float *textToFloatArray(const char *filePathName, size_t *out_n)
 {
 
