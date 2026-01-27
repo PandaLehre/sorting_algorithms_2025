@@ -3,7 +3,9 @@
 #include <time.h>
 
 //-------------------- Check Sorted --------------------//
-int is_sorted(const float *a, size_t n){
+int is_sorted(const float *a, size_t n, size_t *checked){
+    (*checked)++;
+    if(n < 2) return 1;
     for (size_t i = 0; i < n - 1; i++)
     {
         if (a[i] > a[i+1]) return 0;
@@ -19,7 +21,7 @@ void swap(float *a, float *b){
 }
 
 //Fisher-Yates-Shuffle
-void FisherYatesShuffle(float *a, size_t n){
+void FisherYatesShuffle(float *a, size_t n, size_t *switched){
     if(n < 2) return;
 
     for (size_t i = n-1; i > 0; i--)
@@ -28,13 +30,14 @@ void FisherYatesShuffle(float *a, size_t n){
 
         swap(&a[i], &a[(int)randPos]);
     }
+    (*switched)++;
     
 }
 
 //-------------------- Logical Order --------------------//
-void bogosort(float *a, size_t n){
+void bogosort(float *a, size_t n, size_t *switched, size_t *checked){
 
-    while(!is_sorted(a, n)){
-        FisherYatesShuffle(a, n);
+    while(!is_sorted(a, n, checked)){
+        FisherYatesShuffle(a, n, switched);
     }
 }
