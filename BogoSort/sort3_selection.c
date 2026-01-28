@@ -10,11 +10,11 @@ void swap(float *a, int pos1, int pos2){
 
 void selectionsort(float *a,  size_t n, size_t *switched, size_t *checked){
 
-    for (size_t i = 0; i < n - 2; i++)
+    for (size_t i = 0; i + 1 < n; i++)
     {
         size_t minIndex = i;
 
-        for (size_t j = 0; j < n - 1; j++)
+        for (size_t j = 0; j < n; j++)
         {
             (*checked)++;
             if (a[j] < a[minIndex])
