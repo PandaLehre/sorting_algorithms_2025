@@ -3,6 +3,6 @@
 
 #include <stdlib.h>
 
-void mergeSort(float *a, size_t left, size_t right, size_t *switched, size_t *checked);
+void mergeSort(float *array, size_t leftIndex,size_t rightIndex, size_t *switched, size_t *checked);
 
 #endif
